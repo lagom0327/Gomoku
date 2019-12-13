@@ -1,0 +1,56 @@
+
+
+@import '../reset.css';
+@import './param.scss';
+
+.controlsize {
+  color: $font-color;
+  &__item {
+    display: block;
+    padding: 7px;
+    font-size: $font-size;
+    border-radius: $border-radius;
+    border: $border;
+    margin-bottom: 0.5em;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    
+    &:hover {
+      // background-color: rgba(184, 78, 78, 0.849);
+      background-color: rgba($bg-active, 0.5);
+      color: $font-color-active;
+      border-color: $font-color-active;
+    }
+
+    &:active {
+      background-color: $bg-active;
+    } 
+    
+    &--active {
+      color: $font-color-active;
+      border-color: $font-color-active;
+      background-color: $bg-active;
+    }
+  }
+}
+
+
+.customSize-form {
+  &__title {
+    font-size: $font-size;
+    text-align: center;
+    margin-bottom: 0em;
+  }
+
+  &__input {
+    font-size: $font-size;
+    border-radius: $border-radius;
+    padding: 3px;
+    margin-top: 0.2em;
+  }
+
+  &__multi-sign {
+    margin: 0 5px;
+  }
+}

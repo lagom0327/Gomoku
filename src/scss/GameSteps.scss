@@ -1,0 +1,23 @@
+@import './../reset.css';
+@import './param.scss';
+
+.game-step {
+  margin-top: 0.5em;
+  >  button{
+    padding: 5px;
+    border: $border;
+    border-radius: $border-radius;
+    outline: none;
+    background: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba($bg-active, 0.5);
+      color: $font-color-active;
+      border-color: $font-color-active;
+    }
+    &:active {
+      background-color: $bg-active;
+    }
+  }
+}

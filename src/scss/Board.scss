@@ -1,0 +1,114 @@
+@import './param.scss';
+
+.board-row {
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  &:first-child &__square::after {
+    top: 50%;
+    height: 50%;
+  }
+
+  &:last-child &__square::after {
+    height: 50%;
+  }
+
+  &:first-child &__square {
+    &:first-child {
+      border-top-left-radius: 4px;
+    }
+    &:last-child {
+      border-top-right-radius: 4px;
+    }
+  }
+
+  &:last-child &__square {
+    &:first-child {
+      border-bottom-left-radius: 4px;
+    }
+    &:last-child {
+      border-bottom-right-radius: 4px;
+    }
+  }
+
+  &__square {
+    background: rgb(158, 118, 66);
+    border: none;
+    float: left;
+    height: 40px;
+    margin-right: -1px;
+    margin-top: -1px;
+    width: 40px; 
+    position: relative;
+    outline: none;
+    /* 橫線 */
+    &::before {
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+    }
+
+    /* 直線 */
+    &::after {
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    }
+
+    &::before, &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      background: #000;
+      z-index: 0;
+    }
+
+    &:first-child::before {
+      left: 50%;
+    }
+    
+    &:last-child::before {
+      right: 50%;
+    }
+    
+    &:first-child::before, &:last-child::before {
+      width: 50%;
+    }
+
+  }
+
+  &__stone {
+    border-radius: 50%;
+    z-index: 10;
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    margin-right: 0;
+    transform: translate(-50%, -50%);
+
+    &--black {
+      background-color: black;
+      display: block;
+    }
+
+    &--white {
+      background-color: white;
+      display: block;
+    }
+  }
+
+  &__square:hover > &__stone {
+    display: block;
+    background: none;
+    border: dotted 1px rgb(173, 173, 173);
+  }
+}
