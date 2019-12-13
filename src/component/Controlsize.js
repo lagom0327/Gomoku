@@ -12,7 +12,7 @@ const CustomInput = ({ x, y, handleClickCustom }) => (
       className="customSize-form__input"
       value={x}
       min="5"
-      max="24"
+      max="19"
       name="x"
       onChange={handleClickCustom}
     />

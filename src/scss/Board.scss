@@ -39,8 +39,9 @@
     border: none;
     float: left;
     height: 40px;
-    margin-right: -1px;
-    margin-top: -1px;
+    // for window.devicePixelRatio = 1.5 線粗細不一
+    margin-right: -2px;
+    margin-top: -2px;
     width: 40px; 
     position: relative;
     outline: none;

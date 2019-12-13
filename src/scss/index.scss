@@ -2,16 +2,22 @@
 
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
-  background: gray;
+  background: $bg-color;
+}
+
+#root {
+  min-width: 1200px;
 }
 
 .game {
   display: flex;
   flex-direction: column;
+  padding: 0 2vw;
 
   &_steps {
-    position: absolute;
-    right: 15%;
+    // position: absolute;
+    // right:5%;
+    width: 220px;
   }
 
   &_title{
@@ -23,17 +29,24 @@ body {
     margin-top: 0.5em;
     text-shadow: black 3px 2px 4px;
   }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .controlsize {
-  position: absolute;
-  left: 10%;
+  // position: absolute;
+  // left: 5%;
+  width: 220px;
 }
 
 .board {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  // position: absolute;
+  // left: 50%;
+  // transform: translate(-50%, 0);
 }
 
 .player {

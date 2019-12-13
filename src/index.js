@@ -123,7 +123,7 @@ class Game extends Component {
     const form = document.forms.customSize;
     let x = form ? Number(form.elements.x.value) : 5;
     let y = form ? Number(form.elements.y.value) : 5;
-    if (x > 24) x = 24;
+    if (x > 19) x = 19;
     if (y > 24) y = 24;
     const custom = { x, y };
     this.setState({

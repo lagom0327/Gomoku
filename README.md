@@ -26,15 +26,22 @@
 │   │   ├── Board.scss
 │   │   ├── Controlsize.css
 │   │   ├── GameSteps.scss
+│   │   ├── index.scss
 │   │   └── param.scss
-│   ├── index.css
 │   ├── index.js
-│   └── reset.css
+│   ├── reset.css
+│   ├── serviceWorker.js
+│   └── setupTests.js
+├── .eslintrcignore
 ├── .eslintrc.js
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
 ├── README.md
-├── todolist.png
-└── todolist.png
+└── screenshot.png
 ```
+## User story
+- 可以選擇或自訂棋盤尺寸
+  - 最小 `5 X 5`
+  - 最大 `19 X 24`
+- 可以跳回以往任何一步
