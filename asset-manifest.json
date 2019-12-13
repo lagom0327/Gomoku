@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Gomoku/static/css/main.bdd11093.chunk.css",
+    "main.css": "/Gomoku/static/css/main.b4796c64.chunk.css",
     "main.js": "/Gomoku/static/js/main.e2e4e5f6.chunk.js",
     "main.js.map": "/Gomoku/static/js/main.e2e4e5f6.chunk.js.map",
     "runtime-main.js": "/Gomoku/static/js/runtime-main.2f9bdd9f.js",
@@ -8,15 +8,15 @@
     "static/js/2.74904895.chunk.js": "/Gomoku/static/js/2.74904895.chunk.js",
     "static/js/2.74904895.chunk.js.map": "/Gomoku/static/js/2.74904895.chunk.js.map",
     "index.html": "/Gomoku/index.html",
-    "precache-manifest.df7734b0601944887de8c8270287277c.js": "/Gomoku/precache-manifest.df7734b0601944887de8c8270287277c.js",
+    "precache-manifest.949fa667ebc9c6340ca781e8176460a8.js": "/Gomoku/precache-manifest.949fa667ebc9c6340ca781e8176460a8.js",
     "service-worker.js": "/Gomoku/service-worker.js",
-    "static/css/main.bdd11093.chunk.css.map": "/Gomoku/static/css/main.bdd11093.chunk.css.map",
+    "static/css/main.b4796c64.chunk.css.map": "/Gomoku/static/css/main.b4796c64.chunk.css.map",
     "static/js/2.74904895.chunk.js.LICENSE": "/Gomoku/static/js/2.74904895.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.2f9bdd9f.js",
     "static/js/2.74904895.chunk.js",
-    "static/css/main.bdd11093.chunk.css",
+    "static/css/main.b4796c64.chunk.css",
     "static/js/main.e2e4e5f6.chunk.js"
   ]
 }
