@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Gomoku/static/css/main.cc4db509.chunk.css",
-    "main.js": "/Gomoku/static/js/main.6bfce102.chunk.js",
-    "main.js.map": "/Gomoku/static/js/main.6bfce102.chunk.js.map",
+    "main.css": "/Gomoku/static/css/main.ddc5772d.chunk.css",
+    "main.js": "/Gomoku/static/js/main.e5a3f6c2.chunk.js",
+    "main.js.map": "/Gomoku/static/js/main.e5a3f6c2.chunk.js.map",
     "runtime-main.js": "/Gomoku/static/js/runtime-main.baa5b391.js",
     "runtime-main.js.map": "/Gomoku/static/js/runtime-main.baa5b391.js.map",
-    "static/js/2.fa3469d1.chunk.js": "/Gomoku/static/js/2.fa3469d1.chunk.js",
-    "static/js/2.fa3469d1.chunk.js.map": "/Gomoku/static/js/2.fa3469d1.chunk.js.map",
+    "static/js/2.94e9495b.chunk.js": "/Gomoku/static/js/2.94e9495b.chunk.js",
+    "static/js/2.94e9495b.chunk.js.map": "/Gomoku/static/js/2.94e9495b.chunk.js.map",
     "index.html": "/Gomoku/index.html",
-    "precache-manifest.8fbce670d508e8038fc269af3076232c.js": "/Gomoku/precache-manifest.8fbce670d508e8038fc269af3076232c.js",
+    "precache-manifest.66d358d85a857b0dfcda3d5b8aa5f2f7.js": "/Gomoku/precache-manifest.66d358d85a857b0dfcda3d5b8aa5f2f7.js",
     "service-worker.js": "/Gomoku/service-worker.js",
-    "static/css/main.cc4db509.chunk.css.map": "/Gomoku/static/css/main.cc4db509.chunk.css.map"
+    "static/css/main.ddc5772d.chunk.css.map": "/Gomoku/static/css/main.ddc5772d.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.baa5b391.js",
-    "static/js/2.fa3469d1.chunk.js",
-    "static/css/main.cc4db509.chunk.css",
-    "static/js/main.6bfce102.chunk.js"
+    "static/js/2.94e9495b.chunk.js",
+    "static/css/main.ddc5772d.chunk.css",
+    "static/js/main.e5a3f6c2.chunk.js"
   ]
 }
