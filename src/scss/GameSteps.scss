@@ -12,12 +12,12 @@
     cursor: pointer;
 
     &:hover {
-      background-color: rgba($bg-active, 0.5);
+      background-color: rgba($main-color, 0.5);
       color: $font-color-active;
       border-color: $font-color-active;
     }
     &:active {
-      background-color: $bg-active;
+      background-color: $main-color;
     }
   }
 }

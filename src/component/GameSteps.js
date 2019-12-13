@@ -19,7 +19,7 @@ const GameSteps = ({ history, handleJumpTo }) => {
   });
 
   return (
-    <div className="game-steps">
+    <div className="game_steps">
       <ol>{moves}</ol>
     </div>
   );

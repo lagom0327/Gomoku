@@ -5,7 +5,7 @@ import Board from './component/Board';
 import Controlsize from './component/Controlsize';
 import GameSteps from './component/GameSteps';
 import './reset.css';
-import './index.css';
+import './scss/index.scss';
 
 const calculateWinner = (squares, x, y, player) => {
   const num = 5;
@@ -44,9 +44,9 @@ const calculateWinner = (squares, x, y, player) => {
 };
 
 const NextStone = ({ oneIsNext }) => (
-  <div className="next_player">
-    <p>Next player </p>
-    <div className={`stone ${oneIsNext ? 'black' : 'white'}`} />
+  <div className="player">
+    <p className="player__info">Next</p>
+    <div className={`player__stone player__stone-${oneIsNext ? 'black' : 'white'}`} />
   </div>
 );
 
@@ -55,9 +55,9 @@ NextStone.propTypes = {
 };
 
 const WinnerStone = ({ isBlack }) => (
-  <div className="winner_player">
-    <p>Winner</p>
-    <div className={`stone ${isBlack ? 'black' : 'white'}`} />
+  <div className="player player-winner">
+    <p className="player__info">Winner</p>
+    <div className={`player__stone player__stone-${isBlack ? 'black' : 'white'}`} />
   </div>
 );
 
@@ -150,24 +150,13 @@ class Game extends Component {
       history, stepNumber, oneIsNext, winner, custom: { x, y },
     } = this.state;
     const current = history[stepNumber];
-
-
     const whichsize = x ? 'custom' : history[0].squares.length;
-
-    // let status;
-    // if (winner) {
-    //   // status = ;
-    // } else {
-    //   status = <NextStone oneIsNext={oneIsNext} />;
-    // }
 
     return (
       <div className="game">
         <h1 className="game_title">Gomoku</h1>
-        <div className="player_info">
-          {winner && <WinnerStone isBlack={winner === 1} />}
-          {!winner && <NextStone oneIsNext={oneIsNext} />}
-        </div>
+        {winner && <WinnerStone isBlack={winner === 1} />}
+        {!winner && <NextStone oneIsNext={oneIsNext} />}
         <div className="game-wrapper">
           <Controlsize
             whichsize={whichsize}

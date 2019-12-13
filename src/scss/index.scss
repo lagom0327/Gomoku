@@ -1,0 +1,77 @@
+@import './param.scss';
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  background: gray;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+
+  &_steps {
+    position: absolute;
+    right: 15%;
+  }
+
+  &_title{
+    text-align: center;
+    color: $main-color;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: serif;
+    margin-top: 0.5em;
+    text-shadow: black 3px 2px 4px;
+  }
+}
+
+.controlsize {
+  position: absolute;
+  left: 10%;
+}
+
+.board {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.player {
+  text-align: center;
+  font-size: 30px;
+  margin: 0.5em 0;
+  color: rgba($main-color, 0.8);
+  position: relative;
+  padding: 5px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+
+  &-winner {
+    margin: 0.5em auto;
+    width: 30vw;
+    color: $main-color;
+    border: 2px dashed $main-color;
+    border-radius: $border-radius;
+    padding: 5px 0;
+  }
+
+  &__stone {
+    border-radius: 50%;
+    z-index: 10;
+    box-sizing: border-box;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+
+    &-black {
+      background-color: black;
+      box-shadow:  2px 2px 6px 3px rgba(255, 255, 255, 0.3) inset;
+    }
+    &-white {
+      background-color: white;
+      box-shadow:  -3px -3px 3px 1px rgba(165, 42, 42, 0.5) inset; 
+    }
+  }
+
+}
