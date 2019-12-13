@@ -17,9 +17,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/*js src/**/*.js"
+    "lint": "eslint src/*js src/**/*.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "pre-commit": ["lint"],
+  "pre-commit": [
+    "lint"
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -42,6 +46,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "gh-pages": "^2.1.1",
     "pre-commit": "^1.2.2"
-  }
+  },
+  "homepage": "https://lagom0327.github.io/Gomoku"
 }

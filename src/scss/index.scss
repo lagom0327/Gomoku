@@ -5,18 +5,12 @@ body {
   background: $bg-color;
 }
 
-#root {
-  min-width: 1200px;
-}
-
 .game {
   display: flex;
   flex-direction: column;
   padding: 0 2vw;
 
   &_steps {
-    // position: absolute;
-    // right:5%;
     width: 220px;
   }
 
@@ -38,15 +32,7 @@ body {
 }
 
 .controlsize {
-  // position: absolute;
-  // left: 5%;
-  width: 220px;
-}
-
-.board {
-  // position: absolute;
-  // left: 50%;
-  // transform: translate(-50%, 0);
+  width: 220px
 }
 
 .player {

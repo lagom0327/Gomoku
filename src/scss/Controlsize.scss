@@ -37,6 +37,7 @@
 
 
 .customSize-form {
+  text-align: center;
   &__title {
     font-size: $font-size;
     text-align: center;
@@ -44,13 +45,16 @@
   }
 
   &__input {
+    display: block;
     font-size: $font-size;
     border-radius: $border-radius;
     padding: 3px;
+    margin: 0 auto;
     margin-top: 0.2em;
   }
 
   &__multi-sign {
-    margin: 0 5px;
+    // display: block;
+    margin: 0.2em 0;
   }
 }
